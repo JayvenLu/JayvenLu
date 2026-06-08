@@ -60,7 +60,7 @@ I develop hardware-oriented tactile perception pipelines that connect
 surface-normal inference, depth reconstruction, and normal-force estimation on
 FPGA platforms.
 
-The paper-reported computation rates reach **1022 Hz** for image-to-depth
+The computation rates reach **1022 Hz** for image-to-depth
 reconstruction and **918 Hz** for image-to-normal-force estimation.
 
 ## Publications
@@ -89,7 +89,7 @@ reconstruction and **918 Hz** for image-to-normal-force estimation.
 
 ## Skills
 
-- **Sensing:** vision-based tactile sensing, RGB-NIR imaging, sensor design and
+- **Sensing:** vision-based tactile sensing, Multispectral imaging, sensor design and
   fabrication, geometric and force calibration
 - **Perception:** photometric stereo, surface-normal estimation, 3D
   reconstruction, force estimation, neural inverse rendering, synthetic data
