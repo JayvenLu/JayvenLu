@@ -1,74 +1,98 @@
-<h1 align="center">Hi, I'm Xiaofan Lu</h1>
+<h1 align="center">Xiaofan Lu</h1>
 
 <p align="center">
-  Researcher in vision-based tactile sensing, multimodal robotic perception, and edge AI.
+  M.Eng. Student at Huazhong University of Science and Technology<br>
+  Vision-Based Tactile Sensing | Robotic Perception | Edge AI
+</p>
+
+<p align="center">
+  <a href="mailto:m202470725@hust.edu.cn">Email</a>
 </p>
 
 ## About Me
 
-I develop tactile perception systems that recover contact geometry and force
-from visual observations. My work spans the full research pipeline, from
-sensor data collection and camera calibration to learning-based perception,
-physics-informed reconstruction, hardware acceleration, and system
-validation.
+I am a master's student in Mechanical Engineering at Huazhong University of
+Science and Technology (HUST), advised by Prof. Hua Yang. My research focuses
+on vision-based tactile sensing for contact-rich robotic manipulation.
 
-I am particularly interested in building reliable, high-rate tactile sensing
-for contact-rich robotic manipulation.
+I develop tactile sensing systems across the full research pipeline, including
+sensor structure design, fabrication processes, imaging hardware, geometric
+and force calibration, 3D reconstruction, force estimation, and FPGA
+acceleration. I am particularly interested in high-fidelity, high-speed tactile
+perception that connects sensing hardware, learning-based methods, physical
+modeling, and real-time deployment.
 
 ## Research Interests
 
-- Vision-based tactile sensing and visuotactile perception
-- Surface-normal and depth reconstruction
-- Three-axis contact-force estimation
+- Vision-based tactile sensing
+- Contact geometry reconstruction
+- Three-axis force estimation
+- Neural inverse rendering and synthetic tactile data
 - Multimodal perception for robotic manipulation
-- Physics-informed learning
-- Edge AI, model quantization, and FPGA acceleration
+- Edge AI and FPGA acceleration
 
-## Selected Research
+## Featured Research
 
-### Curved Vision-Tactile Perception
+### RGB-NIR Geometry and Force Perception
 
-I am developing an RGB-NIR curved vision-tactile sensing pipeline that
-combines coordinate-aware surface-normal inference, boundary-prior depth
-reconstruction, marker-based tangential displacement recovery, and
-position-aware three-axis force estimation.
+I lead the development of an RGB-NIR vision-tactile sensing system spanning
+sensor design and fabrication, automated calibration, surface-normal
+estimation, boundary-prior depth reconstruction, marker displacement recovery,
+and position-aware three-axis force estimation.
 
-The project addresses practical challenges in curved tactile sensors,
-including self-occlusion, near-field illumination, spatially varying
-mechanical response, and real-time inference.
+The system achieves a depth MAE of **0.0415 mm**, a normal-force NMAE of
+**2.74%**, and a shear-force NMAE of **2.39%**.
 
-### FPGA Edge Deployment
+### Neural Inverse Rendering and Synthetic Tactile Data
 
-I am building a hardware-oriented workflow for tactile perception that
-connects INT8 normal inference, depth reconstruction, and normal-force
-estimation. The workflow includes golden-vector generation, RTL replay,
-frame-buffer and register-map design, implementation analysis, and board-level
-validation procedures.
+I co-developed a physics-guided near-field multi-LED illumination model and an
+RGB-NIR neural inverse-rendering pipeline for tactile image synthesis. The
+pipeline supports transformed contact rendering, automatic OBB annotation, and
+few-shot tactile pose estimation.
 
-A full-spatial normal-inference RTL implementation has been validated in
-simulation, with a post-route latency estimate of **0.082 ms per 128 x 128
-frame at 200 MHz**. This figure is an implementation estimate rather than a
-camera-to-force board measurement.
+The rendering method reaches **30.22 dB PSNR**, improving upon the
+single-light-source baseline by **6.33 dB**. Models trained with 200 synthetic
+samples per class achieve up to **0.995 mAP50-95** in tactile pose estimation.
+
+### High-Speed Tactile Perception
+
+I develop hardware-oriented tactile perception pipelines that connect
+surface-normal inference, depth reconstruction, and normal-force estimation on
+FPGA platforms.
+
+The paper-reported computation rates reach **1022 Hz** for image-to-depth
+reconstruction and **918 Hz** for image-to-normal-force estimation.
 
 ## Publications
 
-- Yuankai Lin, **Xiaofan Lu**, Jiahui Chen, and Hua Yang,
-  "3D Vision-tactile Reconstruction from Infrared and Visible Images for
-  Robotic Fine-grained Tactile Perception," *IEEE/RSJ International Conference
-  on Intelligent Robots and Systems (IROS)*, 2025.
-  [DOI](https://doi.org/10.1109/IROS60139.2025.11246893)
-- Yuankai Lin, **Xiaofan Lu**, and Hua Yang,
-  "High-Precision RGB-NIR Vision-Tactile Sensor via Neural Inverse Rendering
-  for Robotic Perception," accepted by *IEEE/ASME Transactions on Mechatronics*.
+1. Yuankai Lin, **Xiaofan Lu**, and Hua Yang,<br>
+   **"High-Precision RGB-NIR Vision-Tactile Sensor via Neural Inverse Rendering
+   for Robotic Perception."**<br>
+   *IEEE/ASME Transactions on Mechatronics*, 2025.<br>
+   [Project Page](https://jayvenlu.github.io/smf-psnn-website/) |
+   [IEEE Paper](https://doi.org/10.1109/TMECH.2025.3640680)
 
-## Tools
+2. Yuankai Lin, **Xiaofan Lu**, Jiahui Chen, and Hua Yang,<br>
+   **"3D Vision-Tactile Reconstruction from Infrared and Visible Images for
+   Robotic Fine-Grained Tactile Perception."**<br>
+   *IEEE/RSJ International Conference on Intelligent Robots and Systems
+   (IROS)*, 2025.<br>
+   [Project Page](https://jayvenlu.github.io/gelsplitter3d-website/) |
+   [IEEE Paper](https://doi.org/10.1109/IROS60139.2025.11246893)
 
-`Python` · `PyTorch` · `NumPy` · `OpenCV` · `Verilog/SystemVerilog` ·
-`Vivado` · `XSim` · `Tcl` · `Git`
+## Education
 
-## Current Focus
+- **M.Eng. in Mechanical Engineering**, Huazhong University of Science and
+  Technology, 2024-2027
+- **B.Eng. in Robotics Engineering**, Huazhong University of Science and
+  Technology, 2020-2024
 
-- High-fidelity geometry and force perception for curved tactile sensors
-- Hardware-software co-design for high-rate tactile inference
-- Robust tactile sensing for dexterous and contact-rich manipulation
+## Skills
 
+- **Sensing:** vision-based tactile sensing, RGB-NIR imaging, sensor design and
+  fabrication, geometric and force calibration
+- **Perception:** photometric stereo, surface-normal estimation, 3D
+  reconstruction, force estimation, neural inverse rendering, synthetic data
+  generation
+- **Hardware:** FPGA acceleration, Verilog/SystemVerilog, Vivado, Vitis, XSim
+- **Programming:** Python, C/C++, PyTorch, NumPy, OpenCV, Git, Linux
