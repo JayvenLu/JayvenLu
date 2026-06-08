@@ -6,6 +6,7 @@
 </p>
 
 <p align="center">
+  <a href="https://jayvenlu.github.io/">Academic Website</a> |
   m202470725@hust.edu.cn
 </p>
 
