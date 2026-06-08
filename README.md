@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="mailto:m202470725@hust.edu.cn">Email</a>
+  m202470725@hust.edu.cn
 </p>
 
 ## About Me
