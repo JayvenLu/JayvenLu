@@ -81,6 +81,12 @@ reconstruction and **918 Hz** for image-to-normal-force estimation.
    [Project Page](https://jayvenlu.github.io/gelsplitter3d-website/) |
    [IEEE Paper](https://doi.org/10.1109/IROS60139.2025.11246893)
 
+3. **Xiaofan Lu**, Yuankai Lin, Jiahui Chen, and Hua Yang,<br>
+   **"FasTac: A Curved Vision-Tactile Sensor for High-Fidelity, High-Speed
+   3D Shape and Three-Axis Force Perception."**<br>
+   *Under Review*.<br>
+   [Project Page](https://jayvenlu.github.io/fastac-website/)
+
 ## Education
 
 - **M.Eng. in Mechanical Engineering**, Huazhong University of Science and
